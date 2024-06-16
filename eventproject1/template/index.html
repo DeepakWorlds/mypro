@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="height: 600px;">
+        <div class="item active">
+            <div class="dark-overlay"></div>
+            <img src="{% static 'wallpapers/hn.jpg' %}" alt="" width="1500px">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h1>WELCOME TO AASHIRVAD EVENTZ, WHERE MOMENTS BECOME MEMORIES AND CELEBRATIONS ARE CRAFTED WITH PERFECTION.</h1>
+                <p>Our commitment to perfection in event management ensures every detail is flawlessly executed, transforming your vision into a seamless and unforgettable experience of art.</p>
+                <a class="btn btn-orange" href="{% url 'events' %}">View Events</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dark-overlay"></div>
+            <img src="{% static 'wallpapers/par.jpg' %}" alt="" width="1500px">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h1>WELCOME TO AASHIRVAD EVENTZ, WHERE MOMENTS BECOME MEMORIES AND CELEBRATIONS ARE CRAFTED WITH PERFECTION.</h1>
+                <p>Our commitment to perfection in event management ensures every detail is flawlessly executed, transforming your vision into a seamless and unforgettable experience of art.</p>
+                <a class="btn btn-orange" href="{% url 'events' %}">View Events</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dark-overlay"></div>
+            <img src="{% static 'wallpapers/stn.png' %}" alt="" width="1500px">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <h1>WELCOME TO AASHIRVAD EVENTZ, WHERE MOMENTS BECOME MEMORIES AND CELEBRATIONS ARE CRAFTED WITH PERFECTION.</h1>
+                <p>Our commitment to perfection in event management ensures every detail is flawlessly executed, transforming your vision into a seamless and unforgettable experience of art.</p>
+                <a class="btn btn-orange" href="{% url 'events' %}">View Events</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+{% endblock %}

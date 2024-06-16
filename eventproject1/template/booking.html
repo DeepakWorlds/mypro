@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Booking
+{% endblock %}
+
+{% block content %}
+<div class="container bg-textured-yellow p-3">
+    
+
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Contact details -->
+        <div class="col-md-4">
+            <div class="container bg-light p-3">
+                <h3>Contact Details</h3>
+                <h4 style="color: orange; font-weight: 900;">- LET'S TALK</h4>
+                <h3 style="font-weight: 800;">Crafting Your <br>Dream Event</h3>
+                <p><strong>&#9742;:</strong> +91 9496953012</p>
+<p><strong>&#9993;:</strong> info@aashirvadevents.com</p>
+<p><strong>&#127968;:</strong> 123 Event Lane, Edapally, Ernakulam, India</p>
+                <p>
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Booking  -->
+        <div class="col-md-8">
+            <div class="container p-3 text-center w-75">
+                <h2 style="font-weight: 700;">BOOK YOUR EVENTS</h2><br><br>
+                <form id="bookingForm" action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">BOOK NOW</button>
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeybell Events</title>
+
+   
+
+    
+    
+    
+    <!-- Include other CSS files as needed -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'footer/footer.css' %}">
+
+    <!-- booking page
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+ 
+
+    <style>
+      .navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+
+.navbar-brand, .navbar-nav > li > a {
+    color: #fff; 
+}
+
+
+body {
+    padding-top: 70px; 
+}
+        .nav li a {
+            color: red;
+            font-size: 15px;
+        }
+        .navbar-brand {
+            color: black;
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: unset;
+        }
+        footer {
+            background-color: #d6dcdf;
+            padding: 20px 0;
+        }
+
+        /* indexpage */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.carousel-caption .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    line-height: 1.2; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+.carousel-inner .item {
+    position: relative;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+}
+
+.carousel-inner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    text-align: left;
+    color: #fff;
+    z-index: 2;
+    max-width: 50%;
+}
+
+.carousel-caption h1 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    line-height: 1.2; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.carousel-caption .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-orange {
+    background-color: #ff6600; 
+    border-color: #ff6600; 
+    color: #ffffff; 
+}
+
+.btn-orange:hover {
+    background-color: #e65c00; 
+    border-color: #e65c00; 
+    color: #ffffff; 
+}
+
+.btn-orange:focus, .btn-orange:active {
+    background-color: #cc5200; 
+    border-color: #cc5200; 
+    color: #ffffff; 
+}
+
+
+.text {
+    padding: 20px;
+}
+
+.image {
+    text-align: right;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bg-textured-yellow {
+    background-color: #f4eba8; 
+   
+    background-repeat: repeat; 
+    padding: 20px; 
+}
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-fixed-top navbar-transparent">
+    <div class="container-fluid d-flex justify-content-center">
+            <div class="navbar-header">
+              <img src="{% static 'wallpapers/logae1.png' %}" alt="Bootstrap" width="60" height="45">
+                <a class="navbar-brand" href="#">AASHIRVAD EVENTS</a>
+                <!-- <nav class="navbar bg-body-tertiary"> -->
+                  <!-- <div class="container">
+                    <a class="navbar-brand" href="#"> -->
+                     
+                    <!-- </a> -->
+                  <!-- </div> -->
+                <!-- </nav> -->
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+                <li><a href="{% url 'booking' %}">Booking</a></li>
+                <li><a href="{% url 'contact' %}">Gallery</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    
+    {% endblock %}
+
+
+    {% block footer %}
+    <footer>
+      <h2 class="text-center" style="background-color: yellow;">CRAFTING UNFORGETTABLE MOMENTS</h2>
+      <p>Discover the artistry of Aashirvad Eventz, where we take pride in crafting unforgettable moments that transcend the ordinary, merging precision planning with creative finesse to ensure your special occasions are etched in the hearts of all who attend."</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+            <div class="card blue-background animate-bottom">
+              <img src="{% static 'wallpapers/taking.jpg' %}" class="card-img-top" alt="" width="370" height="300">
+              <div class="card-body">
+                <h3 class="card-title">ENTERTAINMENT EVENTS</h3>
+                <p class="card-text">Experience unforgettable entertainment events where we bring together creativity and expertise to deliver exceptional event planning for concerts, cultural shows, etc.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+            <div class="card blue-background animate-bottom">
+              <img src="{% static 'wallpapers/dj.jpg' %}" class="card-img-top" alt="" width="370" height="300">
+              <div class="card-body">
+                <h3 class="card-title">SOCIAL EVENTS</h3>
+                <p class="card-text">We understand the importance of social events and provide personalized event planning services for weddings, birthdays, and other special occasions to ensure unforgettable memories.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+            <div class="card blue-background animate-bottom">
+              <img src="{% static 'wallpapers/light.jpg' %}" class="card-img-top" alt="" width="370" height="300">
+              <div class="card-body">
+                <h3 class="card-title">EXHIBITIONS & ACTIVATIONS</h3>
+                <p class="card-text">Whether you're looking to create buzz around a product, elevate your brand presence, or engage your customers in a memorable way, our exhibitions and activations offer the perfect platform to leave an impression.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+      
+    
+    {% endblock %}
+
+    <footer>
+    
+    </footer>
+
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-sections">
+              <div class="footer-section">
+                  <h3>Contact Us</h3>
+                  <ul>
+                      <li>Email: info@aashirvadevents.com</li>
+                      <li>Phone: +91 9496953012</li>
+                      <li>Address: 123 Event Lane, Edapally, Ernakulam, India</li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h3>Follow Us</h3>
+                  <div class="social-media">
+                      <a href="#"><img src="{% static 'wallpapers/fb.png' %}" alt="Facebook"></a>
+                      <a href="#"><img src="{% static 'wallpapers/x.jpg' %}" alt="Twitter"></a>
+                      <a href="#"><img src="{% static 'wallpapers/in.png' %}" alt="Instagram"></a>
+                      
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="{% url 'index' %}">Home</a></li>
+                      <li><a href="{% url 'about' %}">About Us</a></li>
+                      <li><a href="{% url 'events' %}">Events</a></li>
+                      <li><a href="{% url 'contact' %}">Gallery</a></li>
+                      <li><a href="{% url 'booking' %}">Booking</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <p class="text-center">&copy; 2024 aashirvadevents.com. All rights reserved.</p>
+  </footer>
+
+  
+   
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Gallery
+{% endblock %}
+
+{% block content %}
+
+<div class="gallery">
+        <h1 style="color: red; font-weight: bold; animation: slideIn 1s ease;">Gallery</h1>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/4pic.jpeg' %}" data-lightbox="gallery" data-title="Image 1 description">
+                <img src="{% static 'wallpapers/4pic.jpeg' %}" alt="Image 1">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/5pic.jpeg' %}" data-lightbox="gallery" data-title="Image 2 description">
+                <img src="{% static 'wallpapers/5pic.jpeg' %}" alt="Image 2">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/6pic.jpeg' %}" data-lightbox="gallery" data-title="Image 3 description">
+                <img src="{% static 'wallpapers/6pic.jpeg' %}" alt="Image 3">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/1pic.jpeg' %}" data-lightbox="gallery" data-title="Image 4 description">
+                <img src="{% static 'wallpapers/1pic.jpeg' %}" alt="Image 4">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/2pic.jpeg' %}" data-lightbox="gallery" data-title="Image 5 description">
+                <img src="{% static 'wallpapers/2pic.jpeg' %}" alt="Image 5">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/3pic.jpeg' %}" data-lightbox="gallery" data-title="Image 6 description">
+                <img src="{% static 'wallpapers/3pic.jpeg' %}" alt="Image 6">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/7pic.jpeg' %}" data-lightbox="gallery" data-title="Image 7 description">
+                <img src="{% static 'wallpapers/7pic.jpeg' %}" alt="Image 7">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/8pic.jpeg' %}" data-lightbox="gallery" data-title="Image 8 description">
+                <img src="{% static 'wallpapers/8pic.jpeg' %}" alt="Image 8">
+            </a>
+            
+        </div>
+        <div class="gallery-item">
+            <a href="{% static 'wallpapers/9pic.jpg' %}" data-lightbox="gallery" data-title="Image 9 description">
+                <img src="{% static 'wallpapers/9pic.jpg' %}" alt="Image 9">
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+<style>
+    .gallery {
+        text-align: center;
+    }
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery-item {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-item img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid #ccc;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .gallery-item p {
+        margin-top: 10px;
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    
+</footer>
+{% endblock %}
+
+{% block extra_js %}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+{% endblock %}
+
+
+

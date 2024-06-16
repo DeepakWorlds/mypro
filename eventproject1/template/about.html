@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center">ABOUT US</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image">
+                <img src="{% static 'wallpapers/lal.jpg' %}" alt="Your Image">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text">
+                <h2>This is for making dream come true</h2>
+                <p>"Through strategic planning, diligent execution, and a commitment to excellence, we are realizing and actualizing professional dreams, transforming aspirations into concrete achievements."</p>
+                <h4 style="color: orange;">Co-founder and Business head Mohanlal</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="text">
+              <h2>Turn your vision into Reality</h2>
+              <p>"With meticulous planning, collaborative efforts, and a commitment to excellence, we are transforming our vision into a remarkable reality at the upcoming event."</p>
+              <h4 style="color: orange;">Founder and Creative Head Manju Warrier</h4>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="image">
+              <img src="{% static 'wallpapers/manju.jpg' %}" alt="Your Image">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}
+{% block footer %}
+
+{% endblock %}
+
